@@ -1,10 +1,10 @@
 import React from 'react';
 import GlobalStyle from './styles/global'; 
-import { HeaderCard } from './components/headerCard';
+import { ContentCards } from './components/contentCards/ContentCards';
 const App = () => (
   <>
     <GlobalStyle />
-    <HeaderCard />
+    <ContentCards />
   olá
   </>   
 );
