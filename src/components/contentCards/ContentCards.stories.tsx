@@ -8,6 +8,14 @@ export default {
   component: ContentCards,
   argTypes: {
     backgroundColor: { control: 'color' },
+    imageSize: {
+      options: ['small', 'medium', 'larger'],
+      control: { type: 'select' },
+    },
+    cardSize: {
+      options: ['small', 'medium', 'larger'],
+      control: { type: 'select' },
+    },
   },
 } as ComponentMeta<typeof ContentCards>;
 
@@ -17,23 +25,29 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   curve: 100,
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+  imageSize: 'small',
+  cardSize: 'medium',
+  src: 'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+
+export const Larger = Template.bind({});
+Larger.args = {
+  imageSize: 'larger',
+  cardSize: 'larger',
+  src: 'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
-  size: 'medium',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+  imageSize: 'medium',
+  cardSize: 'medium',
+  src: 'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'
 };
 
 export const Small = Template.bind({});
 Small.args = {
-  size: 'small',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+  imageSize: 'small',
+  cardSize: 'small',
+  src: 'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'
 };
