@@ -24,8 +24,6 @@ type SizeTypes = {
 }
 
 const selectSize = (type: string) => {
-
-    console.log('OPP: ', type);
     const size = {
         'small': '25%',
         'medium': '50%',

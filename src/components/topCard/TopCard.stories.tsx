@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { TopCard } from './TopCard';
+// import pockball from '../../assets/pockball.svg';
 
 export default {
   title: 'Cards/TopCard',
@@ -9,11 +10,11 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
     imageSize: {
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'medium', 'larger'],
       control: { type: 'select' },
     },
     cardSize: {
-      options: ['small', 'medium', 'large'],
+      options: ['small', 'medium', 'larger'],
       control: { type: 'select' },
     },
   },
@@ -27,26 +28,27 @@ Primary.args = {
   curve: 100,
   imageSize: 'small',
   cardSize: 'medium',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+  src: ''
 };
 
-export const Large = Template.bind({});
-Large.args = {
-  imageSize: 'large',
-  cardSize: 'large',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+
+export const Larger = Template.bind({});
+Larger.args = {
+  imageSize: 'larger',
+  cardSize: 'larger',
+  src: '../../assets/pockball.svg'
 };
 
 export const Medium = Template.bind({});
 Medium.args = {
   imageSize: 'medium',
   cardSize: 'medium',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+  src: '../../assets/pockball.svg'
 };
 
 export const Small = Template.bind({});
 Small.args = {
   imageSize: 'small',
   cardSize: 'small',
-  src: 'https://i.imgur.com/2DhmtJ4.jpg'
+  src: '../../assets/pockball.svg'
 };
