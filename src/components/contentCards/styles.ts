@@ -37,8 +37,8 @@ export const CardContainer = styled.section<CardContainerProps>`
     display: grid;
     grid-template-columns: repeat(2, 1fr) 0.1fr repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr) repeat(2, 0.3fr) repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 0 1em;
+    /* grid-row-gap: 0px; */
     float: left;
     overflow-wrap: break-word;
     border-radius: ${(props) => props.curve || '40px'};
