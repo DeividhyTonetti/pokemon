@@ -45,6 +45,9 @@ export const Column = styled.div<any>`
     min-height: 1px;
     box-sizing: border-box;
 
+    padding-left: 1em;
+    padding-right: 1em;
+
     @media only screen and (min-width: 768px) {
         ${({ mobile }) => mobile && getWitdhGrid(mobile)}
     }
@@ -59,19 +62,17 @@ export const Column = styled.div<any>`
 `;
 
 export const HomeTitle = styled.div`
-    position: absolute;
-    left: 5.6%;
-    right: -0.27%;
-    top: 23.77%;
-    bottom: 68.6%;
-
-    font-family: 'Inter';
+    position: flex;
+   
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-
     letter-spacing: -0.01em;
+    
+    margin-top: 1em;
+    margin-bottom: 1em;
 
     color: #303943;
 `;

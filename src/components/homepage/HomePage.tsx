@@ -10,60 +10,40 @@ import {
     Column,
 } from './styles'
 
+
+
 const HomePage: FC = (props) => {
+
+    const teste = [0, 1, 2, 3, 4, 5];
 
     return (
         <Container>
             <Row>
+                <Header />
+            </Row>
+            <Row>
                 <Column mobile='6' tablet='12' desktop='12'>
-                    
-                    <Header />
                     <HomeTitle>
-                        Qual Pokémon Você Escolheria
+                        Qual pokémon você escolheria?
                     </HomeTitle>
-
-
-                    <ContentCards
-                        backgroundColor={'red'}
-                        cardSize={'small'}
-                        src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
-                    />
-
-                    <ContentCards
-                        backgroundColor={'green'}
-                        cardSize={'small'}
-                        src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
-                    />
-
-                    <ContentCards
-                        backgroundColor={'blue'}
-                        cardSize={'small'}
-                        src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
-                    />
-
-                    <ContentCards
-                        backgroundColor={'yellow'}
-                        cardSize={'small'}
-                        src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
-                    />
-
-                    <ContentCards
-                        backgroundColor={'pink'}
-                        cardSize={'small'}
-                        src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
-                    />
-
-                    <ContentCards
-                        backgroundColor={'purple'}
-                        cardSize={'small'}
-                        src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
-                    />
-
-                
-                    <Footer />
                 </Column>
             </Row>
-
+            <Row>
+                <Column mobile='6' tablet='12' desktop='12'>
+                {
+                    teste.map( () => (
+                        <ContentCards
+                            backgroundColor={'red'}
+                            cardSize={'small'}
+                            src={'https://www.pngplay.com/wp-content/uploads/10/Bulbasaur-Pokemon-PNG-Clipart-Background.png'}
+                        />
+                    )) 
+                }
+                    </Column>
+            </Row>
+            <Row>
+                <Footer />
+            </Row>
         </Container>
     )
 }

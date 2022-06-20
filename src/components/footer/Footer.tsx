@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 
 import {
-    CardContainer,
     ImageContainer,
 } from './styles';
 
@@ -17,17 +16,7 @@ export type TopCardProps = {
 
 const Footer: FC = (props: TopCardProps) => {
 
-    return (
-        <>
-            <CardContainer
-                color={props.backgroundColor}
-                curve={props.curve}
-                cardSize={props.cardSize}
-            >
-                <ImageContainer />
-            </CardContainer>
-        </>
-    )
+    return ( <ImageContainer /> )
 }
 
 export { Footer }
